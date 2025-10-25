@@ -1,0 +1,81 @@
+/* Estilos do Cardápio */
+.menu-container {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding: 20px;
+}
+
+.menu-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.menu-header h1 {
+    color: #d32f2f;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.menu-category {
+    background-color: white;
+    border-radius: 16px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border: 1px solid #ffebee;
+}
+
+.category-title {
+    color: #d32f2f;
+    border-bottom: 2px solid #ffebee;
+    padding-bottom: 15px;
+    margin: 0 0 25px;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.menu-item {
+    background-color: #fff9f9;
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid #ffebee;
+}
+
+.item-name {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+
+.item-description {
+    color: #666;
+    font-size: 0.95em;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.item-price {
+    color: #d32f2f;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-top: 10px;
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .menu-items {
+        grid-template-columns: 1fr;
+    }
+    
+    .menu-container {
+        padding: 10px;
+        margin-top: 20px;
+    }
+}

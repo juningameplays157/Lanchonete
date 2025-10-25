@@ -1,0 +1,173 @@
+/* Reset e estilos base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff5b3;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+            padding-top: 0; /* Removido o padding-top do body */
+        }
+
+        /* Container principal que envolve todo o conteúdo */
+        .main-container {
+            flex: 1;
+            padding: 20px;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            margin-top: 160px; /* Altura do header + espaço */
+        }
+        
+        /* Estilos para a apresentação da lanchonete */
+        .restaurant-presentation {
+            position: relative;
+            background-color: #fff;
+            padding: 20px 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            z-index: 1; /* Reduzido para ficar abaixo do header */
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        
+        .restaurant-presentation h1 {
+            color: #ff0000;
+            margin: 0 0 10px 0;
+            font-size: 1.8em;
+        }
+        
+        .restaurant-presentation p {
+            color: #333;
+            margin: 0 0 15px 0;
+            font-size: 1.1em;
+        }
+        
+        .presentation-highlights {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 0 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .highlight {
+            background-color: #fff8f8;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            color: #555;
+            border: 1px solid #ffdddd;
+            white-space: nowrap;
+        }
+        
+        .description-wrapper {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto 40px; /* 40px de margem inferior */
+            padding: 40px 30px;
+            text-align: center;
+            background-color: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .description-content h2 {
+            color: #d32f2f;
+            margin: 0 0 15px 0;
+            font-size: 1.8em;
+        }
+
+        .description-content p {
+            color: #333;
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin: 0 auto 20px;
+            max-width: 700px;
+        }
+
+        .highlight-tags {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .highlight-tag {
+            background-color: #fff8f8;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.95em;
+            color: #d32f2f;
+            border: 1px solid #ffcdd2;
+            white-space: nowrap;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            transition: all 0.2s ease;
+        }
+
+        .highlight-tag:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .card-wrapper {
+            width: 100%;
+            max-width: 400px;
+            margin: 40px auto; /* 40px de margem superior e inferior */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .card {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            width: 100%;
+            max-width: 400px;
+        }
+        
+        .card img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        
+        .stripe {
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 50px;
+            background-color: #ff0000;
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        .stripe.top {
+            top: 0;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        
+        .stripe.bottom {
+            bottom: 0;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
